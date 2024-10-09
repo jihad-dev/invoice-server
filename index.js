@@ -63,21 +63,9 @@ async function run() {
             res.send(result);
 
         })
+        
         // update info 
 
-        // app.put('/information/:id', async(req,res) =>{
-        //     const id  = req.params.id;
-        //     const updateInfo = req.body;
-        //     const filter = {_id: new ObjectId(id)};
-        //     const options = {upsert:true}
-        //     const updatedInfo = {
-
-        //         $set:{
-
-        //         }
-        //     }
-
-        // })
 
         const { ObjectId } = require('mongodb');
 
