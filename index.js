@@ -110,6 +110,7 @@ async function run() {
                         billNumber: updateInfo.billNumber,
                         dateStart: updateInfo.dateStart,
                         dueDate: updateInfo.dueDate,
+                        grandTotal: updateInfo.grandTotal,
                     }
                 };
 
