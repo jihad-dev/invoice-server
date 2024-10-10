@@ -10,12 +10,6 @@ app.use(cors())
 app.use(express.json())
 
 
-
-
-
-
-
-
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.5ipn6sc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -115,12 +109,6 @@ async function run() {
                 res.status(500).send({ message: "Error updating information", error });
             }
         });
-
-
-
-
-
-
 
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
