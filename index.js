@@ -64,7 +64,6 @@ async function run() {
     app.put("/information/:id", async (req, res) => {
       const id = req.params.id;
       const updateInfo = req.body;
-
       try {
         const filter = { _id: new ObjectId(id) }; // Filter by the document's ID
         const options = { upsert: false }; // Create the document if it doesn't exist
@@ -114,9 +113,7 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
-  }
-   finally {
-    
+  } finally {
   }
 }
 run().catch(console.dir);
